@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Servicios digitales Dani</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="./index.html">Servicios</a></li>
+					<li><a href="./add.html">Agregar</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Agregar nuevo Servicio</h1>
+			<h2>
+				Rellena los siguientes campos para añadir un nuevo servicio a la lista de servicios disponibles.
+			</h2>
+			<p>Los campos con asterisco * son obligatorios.</p>
+			<form id="services">
+				<fieldset id="name">
+					<label for="name">Servicio*</label>
+					<input type="text" name="name" required autofocus />
+				</fieldset>
+				<fieldset>
+					<label for="type">Tipo</label>
+					<input type="text" name="type" />
+				</fieldset>
+				<fieldset>
+					<label for="desc">Descripcion</label>
+					<input type="text" name="desc" />
+				</fieldset>
+				<fieldset id="ref">
+					<label for="ref">Referencia*</label>
+					<input type="text" name="ref" required />
+				</fieldset>
+				<fieldset>
+					<label for="price">Precio</label>
+					<input type="text" name="price" required />
+				</fieldset>
+				<button type="submit">AGREGAR</button>
+			</form>
+		</main>
+		<footer>
+			<p>(c) av republica arxentina 40 6ªB, 2020. Todos los derechos reservados.</p>
+		</footer>
+		<script src="./js/add.js"></script>
+	</body>
+</html>
