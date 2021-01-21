@@ -42,7 +42,7 @@ async function listItem(req, res, next) {
                 <td>${desc}</td>
                 <td>${ref}</td>
 				<td class="size">${price}</td>
-				<td><a href="./index.html">Solicitar</a></td>
+				<td><a href="./solicitar.html">Solicitar</a></td>
           </tr>`;
 		});
 

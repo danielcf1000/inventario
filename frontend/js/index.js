@@ -2,9 +2,11 @@ const form = document.querySelector('form');
 const tbody = document.querySelector('tbody');
 
 async function listItems() {
-	const response = await fetch('http://localhost:3000/');
+	const response = await fetch('http://localhost:4000/');
 	const { data } = await response.json();
+
 	tbody.innerHTML = data;
+
 }
 
 listItems();
@@ -12,7 +14,7 @@ listItems();
 form.addEventListener('submit', async function (e) {
 	e.preventDefault();
 
-	const url = new URL('http://localhost:3000/');
+	const url = new URL('http://localhost:4000/');
 	const inputs = form.elements;
 	const params = {
 		key: inputs[1].value,

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<title>Servicios digitales Dani</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="./index.html">Productos</a></li>
+					<li><a href="./add.html">Agregar</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<form action="./solicitar.html">
+				<fieldset>
+					<label for="nombre">Nombre Solicitante</label>
+					<input type="text" name="nombre" placeholder="Nombre Solicitante" />
+                </fieldset>
+                <fieldset>
+					<label for="apellidos">Apellidos Solicitante</label>
+					<input type="text" name="apellidos" placeholder="Apellidos Solicitante" />
+				</fieldset>
+				<fieldset>
+					<label for="tel">Telefono</label>
+					<input type="tel" name="tel" placeholder="Telefono" />
+				</fieldset>
+               
+                <fieldset>
+					<label for="text">Texto para tarea</label>
+					<textarea id="text" name="text" >
+                    Texto para nada de ejemplo
+                    </textarea>
+				</fieldset>
+				<button type="submit">Enviar</button>
+			</form>
+		</main>
+		<footer>
+			<p>(c) av republica arxentina 40 6ªB, 2020. Todos los derechos reservados.</p>
+		</footer>
+		<script src="./js/addUser.js"></script>
+	</body>
+</html>

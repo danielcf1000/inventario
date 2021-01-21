@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 
-const { addItem, listItem } = require('./controllers');
+const { addItem, listItem, addUser } = require('./controllers');
 
 const { PORT } = process.env;
 
@@ -16,6 +16,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', listItem);
 
 app.post('/add', addItem);
+
+app.post('/addUser', addUser);
 
 app.use((error, req, res, next) => {
 	console.error(error);

@@ -5,7 +5,7 @@ form.addEventListener('submit', async function (e) {
 	const formData = new FormData(this);
 	const searchParams = new URLSearchParams(formData);
 
-	const response = await fetch('http://localhost:4000/add', {
+	const response = await fetch('http://localhost:4000/addUser', {
 		method: 'post',
 		body: searchParams,
 	});
@@ -14,7 +14,7 @@ form.addEventListener('submit', async function (e) {
 	if (data.status === 'error') {
 		alert(data.message);
 		setTimeout(() => {
-			window.location.href = './add.html';
+			window.location.href = './solicitar.html';
 		}, 300);
 	} else {
 		
